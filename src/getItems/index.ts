@@ -1,4 +1,4 @@
-const AWS = require('aws-sdk');
+import AWS from 'aws-sdk';
 
 exports.handler = async () => {
   // Use dynamodb to get items from the Item table

@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "dependencies": {
     "aws-sdk": "~2"
+  },
+  "devDependencies": {
+    "@types/node": "^12.6.8"
   }
 }
