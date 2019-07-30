@@ -2,7 +2,7 @@
 
 This is a simple backend API for a list app, written in Typescript.
 
-Follow the [Stackery Quickstart](https://docs.stackery.io/docs/quickstart/quickstart-nodejs/) to learn to use Stackery while writing this application.
+Follow the [Stackery Quickstart](https://docs.stackery.io/docs/quickstart/quickstart-typescript/) to learn to use Stackery while writing this application.
 
 The following are descriptions of the Stackery resources we'll be working with:
 
@@ -22,15 +22,16 @@ Here is an overview of the files:
 ├── src                           <-- Source code dir for all AWS Lambda functions
 │   ├── getItems                  <-- Source code dir for getItems function
 │   │   ├── README.md             <-- Function-specific README
-│   │   ├── index.js              <-- Lambda function code
+│   │   ├── index.ts              <-- Lambda function code
 │   │   ├── package.json          <-- NodeJS dependencies
 │   │   └── .stackery-config.yaml <-- Stackery function configuration file
 │   ├── newItem                   <-- Source code dir for newItem function
 │   │   ├── README.md             <-- Function-specific README
-│   │   ├── index.js              <-- Lambda function code
+│   │   ├── index.ts              <-- Lambda function code
 │   │   ├── package.json          <-- NodeJS dependencies
 │   │   └──.stackery-config.yaml  <-- Stackery function configuration file
 └── template.yaml                 <-- SAM infrastructure-as-code template
+└── tsconfig.json                 <-- Typescript config file
 └──.stackery-config.yaml          <-- Stackery stack configuration file
 ```
 
