@@ -1,4 +1,4 @@
-# Stackery Quickstart NodeJS
+# Stackery Quickstart Typescript
 
 This is a simple backend API for a list app, written in Typescript.
 
