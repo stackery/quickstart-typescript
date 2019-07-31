@@ -5,8 +5,8 @@ exports.handler = async () => {
   const params: any = {
     TableName: process.env.TABLE_NAME, // get the table name from the automatically populated environment variables
     Item: {
-      id: '3', // modify with each invoke so the id does not repeat
-      content: 'Some content' // modify content here
+      id: '1', // modify with each invoke so the id does not repeat
+      content: 'This is my content' // modify content here
     },
     ConditionExpression: 'attribute_not_exists(id)', // do not overwrite existing entries
     ReturnConsumedCapacity: 'TOTAL'

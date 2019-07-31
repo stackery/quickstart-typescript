@@ -9,6 +9,5 @@
   "types": [
     "node",
     "aws-sdk"
-  ],
-  "include": ["src/**/*"]
+  ]
 }
