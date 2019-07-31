@@ -3,7 +3,7 @@ import * as AWS from 'aws-sdk';
 exports.handler = async () => {
   // Use dynamodb to get items from the Item table
   const dynamodb = new AWS.DynamoDB.DocumentClient();
-  const params = {
+  const params: any = {
     TableName: process.env.TABLE_NAME
   };
 
@@ -11,7 +11,7 @@ exports.handler = async () => {
 
   try {
     console.log(`Getting data from table ${process.env.TABLE_NAME}.`);
-    const items = await dynamodb.scan(params).promise(); // get items from DynamoDB
+    const items: any = await dynamodb.scan(params).promise(); // get items from DynamoDB
     items.Items.forEach((item: any) => allItems.push(item)); // put contents in an array for easier parsing
     allItems.forEach(item => console.log(`Item ${item.id}: ${item.content}\n`)); // log the contents
   } catch (error) {

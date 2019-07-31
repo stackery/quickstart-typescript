@@ -2,7 +2,7 @@ import * as AWS from 'aws-sdk';
 
 exports.handler = async () => {
   const dynamodb = new AWS.DynamoDB.DocumentClient();
-  const params = {
+  const params: any = {
     TableName: process.env.TABLE_NAME, // get the table name from the automatically populated environment variables
     Item: {
       id: '1', // modify with each invoke so the id does not repeat
@@ -22,7 +22,7 @@ exports.handler = async () => {
   }
   
   // Return a 200 response if no errors
-  const response = {
+  const response: object = {
     statusCode: 200,
     headers: {
       'Content-Type': 'application/json'
