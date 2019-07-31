@@ -23,17 +23,18 @@ Here is an overview of the files:
 │   └── stackery.prebuild.sh      <-- Prebuild hook for transpiling typescript
 ├── src                           <-- Source code dir for all AWS Lambda functions
 │   ├── getItems                  <-- Source code dir for getItems function
-│   │   ├── README.md             <-- Function-specific README
+│   │   ├──.stackery-config.yaml  <-- Stackery function configuration file
 │   │   ├── index.ts              <-- Lambda function code
 │   │   ├── package.json          <-- NodeJS dependencies
-│   │   └── .stackery-config.yaml <-- Stackery function configuration file
+│   │   ├── README.md             <-- Function-specific README
+│   │   └── tsconfig.json         <-- Typescript config file
 │   └── newItem                   <-- Source code dir for newItem function
-│       ├── README.md             <-- Function-specific README
+│       ├──.stackery-config.yaml  <-- Stackery function configuration file
 │       ├── index.ts              <-- Lambda function code
 │       ├── package.json          <-- NodeJS dependencies
-│       └──.stackery-config.yaml  <-- Stackery function configuration file
+│       ├── README.md             <-- Function-specific README
+│       └── tsconfig.json         <-- Typescript config file
 └── template.yaml                 <-- SAM infrastructure-as-code template
-└── tsconfig.json                 <-- Typescript config file
 └──.stackery-config.yaml          <-- Stackery stack configuration file
 ```
 
