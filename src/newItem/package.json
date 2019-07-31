@@ -8,8 +8,8 @@
     "aws-sdk": "~2"
   },
   "devDependencies": {
-    "@types/node": "^12.6.8",
     "@types/aws-sdk": "^2.7.0",
+    "@types/node": "^12.6.8",
     "typescript": "^3.5.3"
   }
 }
