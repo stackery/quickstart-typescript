@@ -19,17 +19,19 @@ Here is an overview of the files:
 ```bash
 .
 ├── README.md                     <-- This README file
+├── deployHooks                   <-- Stackery deploy hooks directory
+│   └── stackery.prebuild.sh      <-- Prebuild hook for transpiling typescript
 ├── src                           <-- Source code dir for all AWS Lambda functions
 │   ├── getItems                  <-- Source code dir for getItems function
 │   │   ├── README.md             <-- Function-specific README
 │   │   ├── index.ts              <-- Lambda function code
 │   │   ├── package.json          <-- NodeJS dependencies
 │   │   └── .stackery-config.yaml <-- Stackery function configuration file
-│   ├── newItem                   <-- Source code dir for newItem function
-│   │   ├── README.md             <-- Function-specific README
-│   │   ├── index.ts              <-- Lambda function code
-│   │   ├── package.json          <-- NodeJS dependencies
-│   │   └──.stackery-config.yaml  <-- Stackery function configuration file
+│   └── newItem                   <-- Source code dir for newItem function
+│       ├── README.md             <-- Function-specific README
+│       ├── index.ts              <-- Lambda function code
+│       ├── package.json          <-- NodeJS dependencies
+│       └──.stackery-config.yaml  <-- Stackery function configuration file
 └── template.yaml                 <-- SAM infrastructure-as-code template
 └── tsconfig.json                 <-- Typescript config file
 └──.stackery-config.yaml          <-- Stackery stack configuration file
