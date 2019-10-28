@@ -1,13 +1,15 @@
 {
-  "name": "getitems",
+  "name": "newitem",
   "version": "1.0.0",
   "scripts": {
     "build": "tsc"
   },
+  "dependencies": {
+    "typescript": "^3.4.3"
+  },
   "devDependencies": {
     "aws-sdk": "~2",
     "@types/aws-sdk": "^2.7.0",
-    "@types/node": "^12.6.8",
-    "typescript": "^3.5.3"
+    "@types/node": "^12.6.8"
   }
 }
