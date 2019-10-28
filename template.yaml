@@ -29,6 +29,8 @@ Resources:
             Path: /newItem
             Method: POST
             RestApiId: !Ref QuickstartApi
+      Metadata:
+        RuntimeOption: typescript
   getItems:
     Type: AWS::Serverless::Function
     Properties:
@@ -57,6 +59,8 @@ Resources:
             Path: /items
             Method: GET
             RestApiId: !Ref QuickstartApi
+      Metadata:
+        RuntimeOption: typescript
   Items:
     Type: AWS::DynamoDB::Table
     Properties:
