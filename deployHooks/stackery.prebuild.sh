@@ -1,3 +1,3 @@
-#!/bin/bash
+#!/bin/sh
 
 for i in src/*; do echo transpiling $i function; (cd $i; npm run build); done
